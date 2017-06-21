@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p %c.%M:%L - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="loggerFile" class="org.apache.log4j.RollingFileAppender">
+		<param name="File" value="${catalina.base}/sso-log/sso-server-log.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="10000KB" /> <!-- 当日志文件大于500k时，自动备份，形式为server.log.1 -->
+		<param name="MaxBackupIndex" value="50" /><!-- 当server.log.*文件超过5个时，删除最老的一个 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ISO8601} %l -- %p -- %m%n" />
+		</layout>
+	</appender>
+	
+	<logger name="com.boy.sso">
+			<level value="info" />
+		<appender-ref ref="loggerFile" />
+	</logger>
+	<!-- for all other loggers log only info and above log messages -->
+	<root>
+		<priority value="info" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</log4j:configuration> 
