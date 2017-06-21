@@ -9,5 +9,7 @@
   	<module>boy-sso-client</module>
   	<module>boy-sso-server</module>
   	<module>boy-sso-example</module>
+  	<module>boy-sso-example1</module>
+  	<module>boy-sso-example2</module>
   </modules>
 </project>

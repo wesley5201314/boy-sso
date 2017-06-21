@@ -2,7 +2,7 @@
 # 单点登录系统 #
 
 ## 简单使用方法 ##
-1、直接在web.xml中添加如下代码，需要注意的是需要依赖boy-sso-client这个项目。
+1、boy-sso-example项目中直接在web.xml中添加如下代码，需要注意的是需要依赖boy-sso-client这个项目。
 
 		<filter>
 			<filter-name>SSOAuth</filter-name>
@@ -46,8 +46,16 @@
 
 ![](http://i.imgur.com/4IAjz05.png)
 
-## 登录成功 ##
+## 登录成功 ## （单个系统）
 
 ![](http://i.imgur.com/Jtc9M9W.png)
 
 ![](http://i.imgur.com/fVJOTO3.png)
+
+## 登录成功 ## （多个系统）
+
+![](http://i.imgur.com/J8miQ2D.png)
+
+![](http://i.imgur.com/8cxlvNv.png)
+
+![](http://i.imgur.com/ePlhdwB.png)

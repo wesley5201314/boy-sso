@@ -5,9 +5,9 @@
 		<title>Application System&nbsp;-&nbsp;homepage</title>
 	</head>
 	<body>
-		<center><h1>Application System</h1></center>
+		<center><h1>Application System 1</h1></center>
 		<hr/>
-		<center><font color="red"  size="35">${username }</font>,Welcome to sso application example!</center>
+		<center><font color="blue"  size="35">${username }</font>,Welcome to sso application example1!</center>
 		<hr/>
 		<a href="${pageContext.request.contextPath }/logout?gotoURL=${pageContext.request.requestURL }">Logout</a>
 	</body>

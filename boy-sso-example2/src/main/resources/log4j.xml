@@ -10,7 +10,7 @@
 	</appender>
 	
 	<appender name="loggerFile" class="org.apache.log4j.RollingFileAppender">
-		<param name="File" value="${catalina.base}/sso-log/sso-example-log.log" />
+		<param name="File" value="${catalina.base}/sso-log/sso-example2-log.log" />
 		<param name="Append" value="true" />
 		<param name="MaxFileSize" value="10000KB" /> <!-- 当日志文件大于500k时，自动备份，形式为server.log.1 -->
 		<param name="MaxBackupIndex" value="50" /><!-- 当server.log.*文件超过5个时，删除最老的一个 -->
